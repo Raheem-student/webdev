@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <img name="slide" width="400" height="200" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <script defer src ="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body >
+  
+
+
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="name">Name</label>
+            
+            <input id="name" name="name" type="text" required>
+
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+        <img src="./img/carousel5.jpeg" id="lastClone" alt="">
+        <img src="./img/carousel1.jpeg" alt="">
+        <img src="./img/carousel2.jpeg" alt="">
+        <img src="./img/carousel3.jpeg" alt="">
+        <img src="./img/carousel4.jpeg" alt="">
+        <img src="./img/carousel5.jpeg" alt="">
+        <img src="./img/carousel1.jpeg" id="firstClone" alt="">
+        </div>
+
+        
+    </div>
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+
+
+    <div class="row">
+        <div class="column">
+          <img src="image1.webp" alt="Nature" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="image2.webp" alt="Snow" onclick="myFunction(this);">
+        </div>
+        <div class="column">
+          <img src="image3.webp" alt="Mountains" onclick="myFunction(this);">
+        </div>
+      </div>
+      
+      <!-- The expanding image container -->
+      <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      
+        <!-- Expanded image -->
+        <img id="expandedImg" style="width:100%">
+      
+        <!-- Image text -->
+        <div id="imgtext"></div>
+      </div>
+
+</body>
+</html>
